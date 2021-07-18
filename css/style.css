@@ -1,0 +1,251 @@
+/* redefinir o padrão de cores do nav do bootstrap */
+.bd-example{
+    height: 200px;
+}
+
+.text-muted{
+    font-size: 15pt;
+}
+
+#logo{
+    min-width: 100px;
+    font-size: 20pt;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px 0 8px 0;
+    overflow: hidden;
+    letter-spacing: 5px;
+}
+
+#logo > span{
+    width: 40%;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cont-car{
+  position: absolute;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  z-index: 9999;
+  text-align: center;
+  font-size: 8pt;
+  color: #fff;
+}
+
+.verify{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: absolute;
+    color: #fff;
+    cursor: pointer; 
+    text-decoration: none !important;
+}
+
+.card:hover .verify{
+    display: flex;
+    color: #fff;
+}
+
+.card-footer{
+    background-color: transparent;
+}
+
+.carousel{
+    height: 100% !important;
+}
+
+.info{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 15%;
+    bottom: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px)
+{
+    .info{
+      font-size: 10pt !important;
+    }
+}
+
+
+@media (max-width: 1200px)
+{
+  .info{
+    display: none;
+  }
+}
+
+.info > p {
+    font-size: 20pt !important;
+    text-shadow: none !important;
+}
+
+.info > a{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.info > a:hover{
+  
+    background-color: #fff;
+    color: #000;
+    transition: 0.7s;
+  
+}
+
+.cont{
+    position: relative !important;
+    top: 100px !important;
+}
+
+.button-page{
+    width: 100px;
+    border:1px solid red;
+}
+
+#info-about{
+  color: #fff;
+}
+
+.text{
+  color: #fff !important;
+}
+
+#info-roda{
+  color: #fff;
+}
+
+#info-about > p > a{
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.button-page a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30pt;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+navbar::after, navbar::before{
+    content: '' !important;
+    display: table !important;
+    clear: both !important;
+}
+
+.footer{
+  min-height: 550px;
+}
+
+
+@media (max-width: 700px)
+{
+  .footer{
+    min-height: 1200px;
+  }
+}
+
+.active{
+    background-color: #000;
+  }
+  
+  .nav-link, .dropdown-item{
+    color: white !important;
+  }
+  
+  .nav-link:hover:not(.active), .dropdown-item:hover{
+    background-color: #fff;
+    color: #000 !important;
+  }
+  
+  .bg-imagem{
+    overflow: hidden;
+    height: 48vw; /* para manter a responsividade utlizamos o viewport */
+   
+  }
+  
+  .bg-imagem p{
+    text-shadow: 4px 4px 8px black;
+    /* para manter a responsividade utilizamos o viewport */
+    font-size: 4vw; 
+  }
+  
+  .mt-60{
+    margin-top: 60px;
+  }
+  
+  /* Estilo agenda */
+  
+  #agenda th{
+    font-size: 1.5vw;
+  }
+  
+  #agenda td{
+    height: 100px;
+    /* 100% / 7 colunas */
+    width: 14.29%;
+  }
+  
+  #agenda td.bg-info{
+    color: white;
+  }
+  
+  footer{
+    height: 50px;
+  }
+
+  #elements > a{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    line-height: 50px;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+
+  #elements > a:hover{
+    background-color: #fff;
+    transition: 0.5s;
+    color: #000;
+  }
